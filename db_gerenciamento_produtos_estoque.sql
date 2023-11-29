@@ -14,12 +14,20 @@ create table produtos
     fornecedor varchar(30)
 );
 
+insert into produtos (codigo, nome, descricao, preco_unit, qtd_estoque, categoria, fornecedor) values
+();
+
+
 create table cliente (
     id_cliente int primary key not null auto_increment,
     nome varchar(100),
     cpf bigint not null,
     telefone bigint
 );
+
+insert into cliente (nome, cpf, telefone) values
+();
+
 
 create table vendas
 (
@@ -32,3 +40,6 @@ create table vendas
     foreign key(cliente_id) references cliente(id_cliente),
     foreign key(produto_id) references produtos(id_produto)
 );
+
+insert into vendas (codigo_venda, cliente_id, produto_id, qtd_produtos) values
+();
