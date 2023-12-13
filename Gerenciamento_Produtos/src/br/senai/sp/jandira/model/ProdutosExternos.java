@@ -1,6 +1,6 @@
 package br.senai.sp.jandira.model;
 
-public class ProdutosInternos extends Produtos{
+public class ProdutosExternos extends Produtos{
     private String tipo;
 
     @Override

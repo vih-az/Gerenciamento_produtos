@@ -9,16 +9,6 @@ abstract class Produtos {
     Scanner scanner = new Scanner(System.in);
 
 
-    public Produtos(String nome, String descricao, String categoria, String fornecedor, int id_produto, int codigo, int qtd_estoque, int preco) {
-        this.nome = nome;
-        this.descricao = descricao;
-        this.categoria = categoria;
-        this.fornecedor = fornecedor;
-        this.id_produto = id_produto;
-        this.codigo = codigo;
-        this.qtd_estoque = qtd_estoque;
-        this.preco = preco;
-    }
 
     public String getNome() {
         return nome;
@@ -102,15 +92,5 @@ abstract class Produtos {
         System.out.println("Insira a quantidade desse produto no estoque: ");
         qtd_estoque = scanner.nextInt();
         scanner.nextLine();
-    }
-
-    public void exibirProduto(){
-        System.out.println(getNome());
-        System.out.println(getCodigo());
-        System.out.println(getPreco());
-        System.out.println(getCategoria());
-        System.out.println(getFornecedor());
-        System.out.println(getDescricao());
-        System.out.println(getQtd_estoque());
     }
 }
